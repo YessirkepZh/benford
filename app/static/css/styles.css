@@ -244,18 +244,10 @@ nav a{
   font-weight: 600;
   color: rgb(61, 162, 192);
 }
-
-#accordionExample .card-body{
-  font-size: 1.1em;
-  padding: 30px;
+#about-div iframe{
+  height: 100%!important;
+  width: 100%!important;
 }
-
-#accordionExample button,
-#accordionExample button:hover,
-#accordionExample button:active{
-  text-decoration: none;
-}
-
 .modal-dialog-full-width {
   width: 100% !important;
   height: 100% !important;

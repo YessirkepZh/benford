@@ -1,149 +1,62 @@
-<!-- about modal (full-page, material design) -->
 <div class="container my-4">
-  <div
-    class="modal fade right pr-0 pl-0"
-    id="about"
-    tabindex="-1"
-    role="dialog"
-    aria-labelledby="aboutLabel"
-    aria-hidden="true">
+  <div class="row">
+    <div class="col-lg-4 col-md-12 mb-4">
+      <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
 
-    <div class="modal-dialog-full-width modal-dialog momodel modal-fluid" role="document">
-      <div class="modal-content-full-width modal-content ">
+          <!--Content-->
+          <div class="modal-content">
 
-        <!-- Header -->
-        <div class="modal-header-full-width modal-header text-center shadow">
-          <h4 class="modal-title w-100 mt-2" id="aboutLabel">
-            About</h4>
-          <a
-            href="#"
-            class="close text-white border-0"
-            data-dismiss="modal"
-            aria-label="Close">
-            <span
-              aria-hidden="true"
-              style="font-size: 1.6em"
-              >&times;</span>
-          </a>
-        </div>
-
-        <!-- Body -->
-        <div class="card-body">
-          <div
-            class=""
-            id="about-div">
-
-            <iframe src="../../static/lib/task1.pdf" frameborder="0" height="300" width="300"></iframe>
-            <div class="accordion" id="accordionExample">
-             
-              <!-- The Benny App : Content -->
-              <div class="card">
-                <div class="card-header" id="headingOne">
-                  <h2 class="mb-0">
-                    <button
-                      class="btn btn-link btn-block text-left collapsed" type="button"
-                      data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                        <h4>The Benny App</h4>
-                    </button>
-                  </h2>
-                </div>
-
-                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-                  <div class="card-body">
-                    {% include 'modals/aboutCards/theBennyApp.html' %}
-                  </div>
-                </div>
+            <!--Body-->
+            <div class="modal-body mb-0 p-0">
+              <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                <iframe
+                  class="youtube-video"
+                  width="560"
+                  height="315"
+                  src="../../static/files/task1.pdf"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
               </div>
-
-
-              <!-- Get a Benny : Content -->
-              <div class="card">
-                <div class="card-header" id="headingTwo">
-                  <h2 class="mb-0">
-                    <button
-                      class="btn btn-link btn-block text-left collapsed" type="button"
-                      data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                      <h4>Get a Benny</h4>
-                    </button>
-                  </h2>
-                </div>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                  <div class="card-body">
-                    {% include 'modals/aboutCards/getABenny.html' %}
-                  </div>
-                </div>
-              </div>
-              
-
-              <!-- Goodness of Fit : Content -->
-              <div class="card">
-                <div class="card-header" id="headingThree">
-                  <h2 class="mb-0">
-                    <button
-                      class="btn btn-link btn-block text-left collapsed" type="button"
-                      data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                      <h4>Goodness of Fit</h4>
-                    </button>
-                  </h2>
-                </div>
-                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                  <div class="card-body">
-                    {% include 'modals/aboutCards/goodnessOfFit.html' %}
-                  </div>
-                </div>
-              </div>
-
-
-              <!-- Inclusions : Content -->
-              <div class="card">
-                <div class="card-header" id="headingFour">
-                  <h2 class="mb-0">
-                    <button
-                      class="btn btn-link btn-block text-left collapsed" type="button"
-                      data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                      <h4>Inclusions</h4>
-                    </button>
-                  </h2>
-                </div>
-                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-                  <div class="card-body">
-                    {% include 'modals/aboutCards/inclusions.html' %}
-                  </div>
-                </div>
-              </div>
-
-
-              <!-- Docker : Content -->
-              <div class="card">
-                <div class="card-header" id="headingFive">
-                  <h2 class="mb-0">
-                    <button
-                      class="btn btn-link btn-block text-left collapsed" type="button"
-                      data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                      <h4>Docker</h4>
-                    </button>
-                  </h2>
-                </div>
-                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
-                  <div class="card-body">
-                    {% include 'modals/aboutCards/docker.html' %}
-                  </div>
-                </div>
-              </div>
-
-
             </div>
+            <!-- End body -->
+
+            <!-- Footer -->
+            <!-- <div class="modal-footer justify-content-center bg-light">
+
+              <a
+                class="btn btn-md btn-outline-info m-2 shadow-sm"
+                title="GitHub"
+                :href="links.github"
+                target="_blank">
+                <i class="fab fa-github social pt-1"></i>
+              </a>
+
+     
+              <a
+                class="btn btn-md btn-outline-info m-2 shadow-sm"
+                title="LinkedIn"
+                :href="links.linkedin"
+                target="_blank">
+                <i class="fab fa-linkedin social pt-1"></i>
+              </a>
+
+
+              <a
+                class="btn btn-md btn-info m-2 shadow-sm text-white stop-video"
+                title="Close"
+                data-dismiss="modal">
+                <i class="fas fa-times social pt-1"></i>
+              </a>
+
+            </div> -->
+            <!-- End footer -->
+
           </div>
-        </div>
+          <!-- End content -->
 
-        <!-- Footer -->
-        <div class="modal-footer-full-width modal-footer">
-          <button
-            type="button"
-            class="btn btn-md btn-outline-info btn-rounded modal-btn"
-            data-dismiss="modal">Close</button>
         </div>
-
       </div>
     </div>
   </div>

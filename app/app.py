@@ -1,7 +1,4 @@
-'''
-FRI OCT 30, 2020
-Stacy Bridges
-'''
+
 # Imports  ---------------------------------------------------------------------
 import os, json, csv
 import pandas as pd

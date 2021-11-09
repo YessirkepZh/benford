@@ -1,7 +1,4 @@
-  
-# MAINTAINER Stacy Bridges "stcybrdgs@gmail.com"
 
-# install os : ubuntu 18, py3
 FROM python:3.8.0-buster
 
 # update packages
