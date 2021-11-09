@@ -1,3 +1,4 @@
+  
 # MAINTAINER Stacy Bridges "stcybrdgs@gmail.com"
 
 # install os : ubuntu 18, py3
@@ -19,9 +20,3 @@ RUN pip install -r requirements.txt
 
 # clone app source code
 COPY /app .
-
-# Expose
-#EXPOSE 5000
-
-# run the py app
-CMD ["python", "/app/app.py"]

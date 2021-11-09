@@ -117,6 +117,7 @@ def getBenfordAnalysis():
     data = request.get_json()                                       # get the data
     df = pd.DataFrame(data)                                         # make a dataframe
 
+
     stats = {}                                                      # create a blank object to capture stats
     stats['totRows'] = len(df.index)                                # get stat: tot rows in submitted column
 
@@ -183,4 +184,4 @@ def getBenfordAnalysis():
 
 if __name__ == '__main__' :
     # app.run()
-    app.run(host="0.0.0.0",port=80)
+    app.run(host="0.0.0.0", port=80, debug=True)
